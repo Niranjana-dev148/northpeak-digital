@@ -1,22 +1,25 @@
 const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
-form.addEventListener("submit", function(event){
+form.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let text = document.getElementById("message").value.trim();
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const text = document.getElementById("message").value.trim();
 
-    if(name === "" || email === "" || text === ""){
+    if (name === "" || email === "" || text === "") {
         message.style.color = "red";
         message.textContent = "Please fill in all fields.";
-    }
-    else{
-        message.style.color = "green";
-        message.textContent = "Message sent successfully!";
-        form.reset();
+        return;
     }
 
+    message.style.color = "green";
+    message.textContent = "Message sent successfully!";
+    form.reset();
+
+    setTimeout(() => {
+        message.textContent = "";
+    }, 3000);
 });

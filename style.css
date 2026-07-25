@@ -3,8 +3,10 @@ html{
 }
 
 body{
-    background:#0f172a;
-    color:#ffffff;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#111827;
 }
 
 header{
@@ -18,6 +20,7 @@ header{
     max-width:1200px;
     margin:auto;
     padding:20px;
+    width:100%;
 }
 
 .navbar-brand{
@@ -28,7 +31,7 @@ header{
 
 .navbar-nav{
     list-style:none;
-    margin-right:30px;
+    margin-right:10px;
 }
 
 .navbar-toggler{
@@ -51,7 +54,7 @@ header{
 }
 
 .hero{
-    height:90vh;
+    min-height:90vh;
     text-align:center;
     padding:20px;
 }
@@ -62,9 +65,9 @@ header{
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:42px;
     margin-bottom:20px;
-    color:#ffffff;
+    color:#0f172a;
 }
 
 .hero p{
@@ -81,12 +84,29 @@ header{
     padding:12px 30px;
     border-radius:8px;
     font-weight:600;
-    transition:0.3s;
+    transition:all 0.3s ease;
+    box-shadow:0 4px 10px rgba(56,189,248,0.3);
 }
 
 .btn:hover{
     background:#0ea5e9;
     transform:translateY(-3px);
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    margin-top:40px;
+}
+
+.stats h3{
+    color:#38bdf8;
+    font-size:40px;
+}
+
+.stats p{
+    color:#cbd5e1;
 }
 
 .services{
@@ -113,10 +133,6 @@ header{
     margin-bottom:20px ;
 }
 
-.service-card:hover{
-    transform:translateY(-8px);
-}
-
 .service-card h3{
     color:#38bdf8;
     margin-bottom:15px;
@@ -127,14 +143,30 @@ header{
     color:#cbd5e1;
     font-size:16px;
 }
-#testimonials{
-    padding:120px 0;
-}
-.testimonials{
-    padding:80px 20px;
+
+#about{
+    padding:80px 0;
 }
 
-.testimonials h2{
+#about h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+#about p{
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#798699;
+}
+
+#testimonials{
+    padding:80px 0;
+}
+
+#testimonials h2{
     text-align:center;
     font-size:32px;
     margin-bottom:50px;
@@ -153,10 +185,6 @@ header{
     transition:0.3s;
     height:200px;
     color:white;
-}
-
-.testimonial-card:hover{
-    transform:translateY(-8px);
 }
 
 .testimonial-card p{
@@ -189,11 +217,7 @@ header{
     text-align:center;
     height:300px;
     transition:0.3s;
-    margin-left:20px;
-}
-
-.pricing-card:hover{
-    transform:translateY(-8px);
+    margin:10px;
 }
 
 .pricing-card h3{
@@ -239,8 +263,13 @@ header{
 }
 
 #contact form{
-    width:60%;
+    width:70%;
     margin:auto;
+}
+
+#contact label{
+    font-weight:600;
+    color:#374151;
 }
 
 #contact input,
@@ -249,7 +278,7 @@ header{
     padding:12px;
     margin-bottom:20px;
     border:1px solid #ccc;
-    border-radius:8px;
+    border-radius:10px;
     font-size:16px;
     outline:none;
 }
@@ -267,13 +296,23 @@ header{
     border-radius:8px;
     font-size:16px;
     cursor:pointer;
-    transition:0.3s;
+    transition:all 0.3s ease;
     margin:auto;
     display:block;
 }
 
 #contact button:hover{
     background:#0ea5e9;
+}
+
+.contact-info{
+    text-align:center;
+    margin-top:40px;
+    color:#555;
+}
+
+.contact-info p{
+    margin:8px 0;
 }
 
 #formMessage{
@@ -288,6 +327,7 @@ footer{
     color:white;
     text-align:center;
     padding:20px 0;
+    font-size:15px;
 }
 
 footer p{
