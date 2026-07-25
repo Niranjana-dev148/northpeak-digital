@@ -365,14 +365,6 @@ footer a:hover{
     .pricing-card{
         margin-bottom:20px;
     }
-    .pricing-container{
-        flex-direction:column !important;
-        align-items:center;
-    }
-    .pricing-card{
-        width:90%;
-        margin:15px 0;
-    }
     }
 
 @media screen and (max-width:576px){
